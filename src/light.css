@@ -1,0 +1,292 @@
+lightbody {
+  color: #0F1F46;
+  height: 100vh;
+  font-family: 'roboto';
+  user-select: none;
+  margin: 0;
+  overflow: hidden;
+}
+
+.lighttext-white {
+  --tw-text-opacity: 1;
+  color: #0F1F46;
+}
+
+.lightinnerBackground {
+  background: #F0F2F9;
+  border: 1px solid #DCDCDC;
+  border-radius: 5px;
+}
+
+.lightheader {
+  background: #F0F2F9;
+  border: 1px solid #DCDCDC;
+}
+
+.lightkeyTitle {
+  font-family: Gilroy-SemiBold;
+  font-size: 10px;
+  line-height: 12px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #95a7b2;
+}
+.lightlicenseTitle {
+  font-family: Gilroy-SemiBold;
+  font-size: 10px;
+  line-height: 12px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #95a7b2;
+  padding-bottom: 10px;
+}
+.lightOpenDashboard {
+  font-family: Gilroy-Bold;
+  font-size: 10px;
+  line-height: 12px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #95a7b2;
+}
+
+.lightinputLicenseKey input {
+  padding: 12px 16px;
+  font-family: Gilroy-SemiBold;
+  font-size: 10px;
+  line-height: 12px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #95a7b2;
+  border-radius: 6px;
+  background: #F0F2F9;
+  border: 1px solid #DCDCDC;
+  outline: none;
+  width: 66%;
+}
+.lightinputLicenseKey .verifyKey {
+  padding: 8px 16px;
+  font-family: Gilroy-SemiBold;
+  font-size: 10px;
+  line-height: 12px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #00b574;
+  border-radius: 6px;
+  background: #F0F2F9;
+  border: 1px solid #DCDCDC;
+  outline: none;
+  width: 66%;
+}
+
+.lightsidebar {
+  background: #F0F2F9;
+  border: 1px solid #DCDCDC;
+  margin-top: -10px;
+}
+.lightmain {
+  background: white;
+}
+
+.lightAIO_text {
+  border-bottom: 1px solid #DCDCDC;
+  margin: 0 32px;
+}
+
+.lightsubmenu {
+  padding: 10px 24px;
+  margin: 7px;
+  color: #95a7b2;
+  background: #EBEBEB;
+  border-radius: 3px;
+  font-family: Gilroy-Bold;
+}
+
+.lightloggedFooter {
+  background: #EBEBEB;
+  border: 1px solid #DCDCDC;
+  padding: 12px 13px;
+}
+
+.lightprogress {
+  width: 60%;
+  background: #F0F2F9;
+  border: 1px solid #DCDCDC;
+  height: 6px;
+  margin: 0 10px;
+  border-radius: 5px;
+}
+
+.lightlastCheckout {
+  background: #F0F2F9;
+  border: 1px solid #DCDCDC;
+  border-radius: 5px;
+  max-height: 464px;
+  height: 100%;
+}
+.lightlatestCheckoutHeader {
+  background: #EBEBEB;
+  border: 1px solid #DCDCDC;
+  padding: 9px 23px;
+}
+
+.lightcheckProductHeader {
+  grid-template-columns: 1fr 2fr 1fr 1fr 2fr;
+  grid-gap: 10px;
+  border-bottom: 1px solid #DCDCDC;
+  padding: 6px;
+}
+
+.lightproductContent {
+  grid-template-columns: 1fr 2fr 1fr 1fr 2fr;
+  padding: 6px;
+  background: #EBEBEB;
+  border: 1px solid #DCDCDC;
+  border-radius: 5px;
+  margin: 15px 15px 6px 15px;
+}
+.lightupdatediscord {
+  background: #F0F2F9;
+  border: 1px solid #DCDCDC;
+  border-radius: 5px;
+  margin: 12px 0 7px 14px;
+  padding: 19px 0;
+}
+.lightupdateBorder {
+  border: 1px solid #DCDCDC;
+  margin: 9px 33px;
+}
+
+.lighttotalCheckoutDashboard {
+  background: #F0F2F9;
+  border: 1px solid #DCDCDC;
+  border-radius: 5px;
+  padding: 23px 27px 0px 27px;
+  margin: 24px 0 7px 14px;
+}
+
+.lighttotalDeclines {
+  background: #F0F2F9;
+  border: 1px solid #DCDCDC;
+  border-radius: 5px;
+  padding: 23px 27px 0px 27px;
+  margin: 12px 0 7px 14px;
+}
+
+.lighttotalFailures {
+  background: #F0F2F9;
+  border: 1px solid #DCDCDC;
+  border-radius: 5px;
+  padding: 23px 27px 0px 27px;
+  margin: 12px 0 7px 14px;
+}
+
+.lighttasks__header {
+  background: #EBEBEB;
+  border: 1px solid #DCDCDC;
+  padding: 9px 23px;
+  border-radius: 5px;
+}
+.lightbg-task {
+  background: #EBEBEB;
+}
+.lightborder-task {
+  border: 1px solid #DCDCDC;
+}
+
+.lighttask__border {
+  border: 1px solid #DCDCDC;
+  margin: 8px 0;
+}
+.lightborder-radius-5 {
+  border-radius: 5px;
+}
+.lighttaskGroupsTitle {
+  padding: 9px 27px;
+}
+.lighttaskGroup {
+  background: #F0F2F9;
+}
+.lightcreatGroup {
+  padding: 12px 16px;
+  background: #F0F2F9;
+  margin: 8px;
+  border-radius: 5px;
+}
+.lightmiddleLine {
+  border: 1px solid #DCDCDC;
+  margin-bottom: 8px;
+}
+
+.lightbg-inactiveBg {
+  background: #EBEBEB;
+}
+
+.lightborder-inactiveBottom {
+  border: 1px solid #DCDCDC;
+  margin: 10px 0;
+}
+
+.lightcreate-task {
+  width: 35%;
+  position: absolute;
+  left: 30%;
+  background: white;
+  top: 22%;
+}
+
+.lighttask-modal-content select {
+  padding: 8px 12px;
+  width: 100%;
+  outline: none;
+  border: none;
+  margin: 5px 0;
+  border-radius: 5px;
+  background: #F0F2F9;
+  color: white;
+
+  font-family: Gilroy-Bold;
+}
+.lighttask-modal-content input {
+  padding: 8px 12px;
+  width: 100%;
+  outline: none;
+  border: none;
+  margin: 5px 0;
+  border-radius: 5px;
+  background: #F0F2F9;
+  color: white;
+}
+
+.lightprofilePart {
+  background: #EBEBEB;
+  border-radius: 5px;
+  width: 26%;
+  padding: 12px 17px;
+}
+.lightProfile__Content {
+  background: #F0F2F9;
+  border: 1px solid #DCDCDC;
+}
+
+.lightinactiveProfileBorder {
+  border: 1px solid #DCDCDC;
+  margin: 12px 0;
+}
+.lightprofileInBorder {
+  border: 1px solid #DCDCDC;
+  margin: 6px 0;
+}
+
+.lightaddProxy__header {
+  background: #EBEBEB;
+  border: 1px solid #DCDCDC;
+  padding: 9px 12px;
+  border-radius: 5px;
+}
+
+.lightAccountContent {
+  margin: 0 14px 10px 11px;
+
+  padding: 11px;
+  background: #EBEBEB;
+}

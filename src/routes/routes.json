@@ -1,0 +1,9 @@
+{
+  "HOME": "/",
+  "DASHBOARD":"/Dashboard",
+  "TASKS": "/Tasks",
+  "PROXIES": "/Proxies",
+  "Profile": "/Profile",
+  "Accounts": "/Accounts",
+  "SETTINGS" : "/Settings"
+}
