@@ -18,6 +18,7 @@ export function Login() {
     }
   };
   const { theme } = useContext(ThemeContext);
+  console.log(theme)
 
   const handleChange = (event: React.ChangeEvent<HTMLInputElement>) => {
     event.persist();
@@ -41,10 +42,10 @@ export function Login() {
         'text-white main-login'
       }
     >
-      <div className="header flex flex  justify-between p-6">
+      <div className={theme+"header flex flex  justify-between p-6"}>
         <div className="flex items-center">
           <img src={Logo} alt="logo" />
-          <div className={'logo-title font-white'}>VelocityAIO</div>
+          <div className={theme+'logo-title font-white'}>VelocityAIO</div>
         </div>
         <div className="flex items-center">
           <div className="contactSupport mr-1">Contact Support</div>
@@ -52,7 +53,7 @@ export function Login() {
         </div>
       </div>
       <div className="flex justify-between w-screen ">
-        <div className="block bg-left p-5 w-50 rightPart">
+        <div className={"block "+theme+"bg-left p-5 w-50 rightPart"}>
           <div className="welometitle">Welcome to VelocityAIO!</div>
           <div className="licenseTitle">
             Please enter your License Key to continue
@@ -61,7 +62,7 @@ export function Login() {
             <div className="OpenDashboard mr-1">Open Dashboard</div>
             <img src={ArrowRight} alt="arrow-right" />
           </div>
-          <div className="block inputLicenseKey mt-4">
+          <div className={"block "+theme+"inputLicenseKey mt-4"}>
             {retrieveData ? (
               <div className="flex justify-between items-center verifyKey">
                 <div className="keyTitle">Key verified</div>

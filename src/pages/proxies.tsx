@@ -133,7 +133,7 @@ export const Proxies = () => {
               ></textarea>
             </div>
             <div className="flex justify-center">
-              <button className="btn  bg-blue btnProxy text-center border-radius-3">
+              <button className={"btn  bg-blue "+theme+"btnProxy text-center border-radius-3"}>
                 Add Proxies
               </button>
             </div>
@@ -155,7 +155,7 @@ export const Proxies = () => {
                   theme +
                   'border-task bg-transparent w-100 ' +
                   theme +
-                  'text-white testOn'
+                  ' text-white  testOn'
                 }
               >
                 <option value="Test On">Test On</option>
@@ -170,7 +170,7 @@ export const Proxies = () => {
               />
             </div>
             <div className="flex justify-center">
-              <button className="btn  bg-blue btnTest text-center border-radius-3">
+              <button className={"btn  bg-blue "+theme+"btnTest text-center border-radius-3"}>
                 Test All
               </button>
             </div>

@@ -5,33 +5,20 @@ import logOut from '../../assets/img/logOut.svg';
 import ArrowRight from '../../assets/img/arrow-right.svg';
 import logo from '../../assets/img/MainLogo.svg';
 import profile from '../../assets/img/profile.svg';
+import { ipcRenderer } from 'electron';
 
 const Settings = (props: any) => {
-  const [count, setCount] = useState(1000);
   const [progress, setProgress] = useState('23');
-  const [themeChange, setThemeChange] = useState([
-    {
-      id: 1,
-      name: 'Dark Theme',
-      select: 'Click to select',
-    },
-    {
-      id: 2,
-      name: 'Light Theme',
-      select: 'Click to select',
-    },
-    {
-      id: 3,
-      name: 'Blue Theme',
-      select: 'Click to select',
-    },
-  ]);
 
   const { theme, setTheme } = useContext(ThemeContext);
 
   function handleSelect(color: any) {
     setTheme(color);
   }
+
+  const logout = () => {
+    ipcRenderer.send('logout');
+  };
 
   return (
     <div className={'w-100 ' + theme + 'innerBackground settings'}>
@@ -54,8 +41,16 @@ const Settings = (props: any) => {
             'text-gray flex items-center'
           }
         >
-          <div className="mr-1">Log Out</div>
-          <img src={logOut} alt="search" />
+          <div
+            className={
+              'active flex justify-center text-center cursor-pointer logout-color ' +
+              theme
+            }
+            onClick={logout}
+          >
+            <div className="mr-1">Log Out</div>
+            <img src={logOut} alt="search" />
+          </div>
         </div>
       </div>
       <div className="flex items-center mt-3 w-100">
@@ -109,10 +104,10 @@ const Settings = (props: any) => {
             </div>
             <div className="flex items-center">
               <span className="text-green font-10 font-Gilroy-Bold">
-                23 Days
+                23 Days &nbsp;
               </span>
               <span className={theme + 'text-gray font-10 font-Gilroy-Bold'}>
-                next charge
+                / next charge
               </span>
             </div>
           </div>
@@ -136,7 +131,7 @@ const Settings = (props: any) => {
                 Discord Webhook
               </div>
               <div className="flex items-center">
-                <div className="font-Gilroy-Bold font-10 text-blue mr-1">
+                <div className="font-Gilroy-Bold font-10 text-green mr-1">
                   Test Webhooks
                 </div>
                 <img src={ArrowRight} alt="arrowRight" />
@@ -223,7 +218,7 @@ const Settings = (props: any) => {
                   }
                 ></div>
                 <div className={theme + 'text-gray font-11 font-Gilroy-Bold'}>
-                  Click to select
+                  {theme == 'dark' ? 'Selected' : 'Click to select'}
                 </div>
               </div>
               <div
@@ -254,7 +249,7 @@ const Settings = (props: any) => {
                   }
                 ></div>
                 <div className={theme + 'text-gray font-11 font-Gilroy-Bold'}>
-                  Click to select
+                  {theme == 'light' ? 'Selected' : 'Click to select'}
                 </div>
               </div>
               <div
@@ -285,7 +280,7 @@ const Settings = (props: any) => {
                   }
                 ></div>
                 <div className={theme + 'text-gray font-11 font-Gilroy-Bold'}>
-                  Click to select
+                  {theme == '' ? 'Selected' : 'Click to select'}
                 </div>
               </div>
             </div>

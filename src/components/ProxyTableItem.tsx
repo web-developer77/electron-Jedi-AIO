@@ -13,7 +13,7 @@ const ProxyTableItem = ({ proxy }: any) => {
     >
       <div className={'font-11 ' + theme + 'text-white'}>{proxy.id}</div>
       <div className={'font-11 ' + theme + 'text-white'}>{proxy.proxy}</div>
-      <div className="font-11 text-blue text-center">{proxy.delay}</div>
+      <div className="font-11 custom-delay text-center">{proxy.delay}</div>
       <div className={'font-11 ' + theme + 'text-white text-center'}>
         <img src={deleteImg} alt="" />
       </div>

@@ -155,16 +155,32 @@ select:focus {
   color: #0a0822;
 }
 .lighttext-btn {
-  color: #F0F2F9;
+  color: #f0f2f9;
 }
 .darktext-btn {
-  color: #1D1D1D;
+  color: #1d1d1d;
 }
 .text-gray {
   color: #95a7b2;
 }
 .text-blue {
   color: #53b2f4;
+}
+
+.lighttask-text-blue {
+  color: #0F1F46;
+}
+
+.task-text-blue {
+  color: white;
+}
+
+.darktask-text-blue {
+  color: white;
+}
+
+.logout-color {
+  color: #FF7878;
 }
 a {
   text-decoration: none;
@@ -204,6 +220,18 @@ a {
   background: #0a0822;
   border: 1px solid #121a42;
 }
+
+.lightheader {
+  background: #f0f2f9;
+  border: 1px solid #dcdcdc;
+  color: #0F1F46;
+}
+
+.darkheader {
+  background: #1d1d1d;
+  border: 1px solid #28292e;
+}
+
 .logo-title {
   font-family: Gilroy-Bold;
   font-size: 12px;
@@ -211,6 +239,22 @@ a {
   letter-spacing: 0em;
   text-align: left;
 }
+/*
+.lightlogo-title {
+  font-family: Gilroy-Bold;
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+.darklogo-title {
+  font-family: Gilroy-Bold;
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 0em;
+  text-align: left;
+} */
 .contactSupport {
   font-family: Gilroy-Bold;
   font-size: 10px;
@@ -220,6 +264,13 @@ a {
 }
 .bg-left {
   background: #020019;
+}
+.lightbg-left {
+  background: #020019;
+}
+
+.darkbg-left {
+  background: #171717;
 }
 .bg-right {
   background: linear-gradient(93.18deg, #3695a8 0%, #5bd4ec 100%),
@@ -316,6 +367,30 @@ a {
   border-radius: 3px;
   color: #0a0822;
 }
+
+.lightlogin {
+  background: #00b574;
+  font-family: Gilroy-Bold;
+  font-size: 11px;
+  line-height: 13px;
+  letter-spacing: 0em;
+  text-align: left;
+  padding: 9px 36px;
+  border-radius: 3px;
+  color: white;
+}
+
+.darklogin {
+  background: #00b574;
+  font-family: Gilroy-Bold;
+  font-size: 11px;
+  line-height: 13px;
+  letter-spacing: 0em;
+  text-align: left;
+  padding: 9px 36px;
+  border-radius: 3px;
+  color: #0a0822;
+}
 .automation {
   font-family: Gilroy-Bold;
   font-size: 13px;
@@ -370,7 +445,7 @@ a {
   line-height: 21px;
   letter-spacing: 0em;
   text-align: left;
-  color: #15495f;
+  color: #037F97;
 }
 
 .lighttab {
@@ -483,14 +558,14 @@ ul li.active {
 
 .lightloggedPart {
   padding: 21px 15px;
-  background: #F0F2F9;
-  border: 1px solid #DCDCDC;
+  background: #f0f2f9;
+  border: 1px solid #dcdcdc;
   border-radius: 5px;
 }
 
 .darkloggedPart {
   padding: 21px 15px;
-  background: #1D1D1D;
+  background: #1d1d1d;
   border-radius: 5px;
 }
 
@@ -502,11 +577,11 @@ ul li.active {
   padding-left: 30px;
 }
 .lightloggedWelcome {
-  border-left: 1px solid #DCDCDC ;
+  border-left: 1px solid #dcdcdc;
   padding-left: 30px;
 }
 .darkloggedWelcome {
-  border-left: 1px solid #28292E;
+  border-left: 1px solid #28292e;
   padding-left: 30px;
 }
 .loggedFooter {
@@ -622,14 +697,14 @@ ul li.active {
 
 .lighttotalCheckoutDashboard .tab {
   margin: 0 !important;
-  border-top: 1px solid #DCDCDC;
+  border-top: 1px solid #dcdcdc;
 }
 .lighttotalCheckoutDashboard .tab .items-center {
   margin-top: 1rem;
 }
 
 .lighttotalFailures .tab {
-  border-top: 1px solid #DCDCDC;
+  border-top: 1px solid #dcdcdc;
 }
 
 .darktotalCheckoutDashboard .tab {
@@ -651,28 +726,28 @@ ul li.active {
 }
 
 .lighttotalDeclines {
-  background: #F0F2F9;
-  border: 1px solid #DCDCDC;
+  background: #f0f2f9;
+  border: 1px solid #dcdcdc;
   border-radius: 5px;
   padding: 23px 27px 0px 27px;
   margin: 12px 0 7px 14px;
 }
 .lighttotalDeclines .tab {
   margin: 0 !important;
-  border-top: 1px solid #DCDCDC;
-  color: #7D7D7D;
+  border-top: 1px solid #dcdcdc;
+  color: #7d7d7d;
 }
 
 .darktotalDeclines {
-  background: #1D1D1D;
-  border: 1px solid #28292E ;
+  background: #1d1d1d;
+  border: 1px solid #28292e;
   border-radius: 5px;
   padding: 23px 27px 0px 27px;
   margin: 12px 0 7px 14px;
 }
 .darktotalDeclines .tab {
   margin: 0 !important;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 .totalDeclines .tab .items-center {
   margin-top: 1rem;
@@ -690,7 +765,7 @@ ul li.active {
 
 .lighttotalFailures .tab {
   margin: 0 !important;
-  color: #7D7D7D;
+  color: #7d7d7d;
 }
 
 .darktotalFailures .tab {
@@ -729,7 +804,7 @@ ul li.active {
   line-height: 21px;
   letter-spacing: 0em;
   text-align: left;
-  color: #55cae1;
+  color: #00B574;
 }
 .totalCheckoutDashboard .mb-5,
 .totalDeclines .mb-5,
@@ -815,19 +890,19 @@ ul li.active {
 }
 .bg-activeBg {
   background: linear-gradient(93.18deg, #3695a8 0%, #5bd4ec 100%);
-  color: #FFFFFF !important;
+  color: #ffffff !important;
 }
 
 .custom-color {
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
 .lightcustom-color {
-  color: #0F1F46;
+  color: #0f1f46;
 }
 
 .darkcustom-color {
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
 .activeState {
@@ -873,17 +948,17 @@ inwaitColor {
   margin: 10px 0;
 }
 .lightborder-inactiveBottom {
-  border: 1px solid #DCDCDC;
+  border: 1px solid #dcdcdc;
   margin: 10px 0;
 }
 .darkborder-inactiveBottom {
-  border: 1px solid #28292E;
+  border: 1px solid #28292e;
   margin: 10px 0;
 }
 .lightcreateBtn {
   background: #53b2f4;
   padding: 9px 17px;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
 .createBtn {
@@ -895,7 +970,7 @@ inwaitColor {
 .darkcreateBtn {
   background: #53b2f4;
   padding: 9px 17px;
-  color: #1D1D1D;
+  color: #1d1d1d;
 }
 
 .startBtn {
@@ -938,6 +1013,16 @@ inwaitColor {
   padding: 20px 52px;
   border-radius: 5px;
 }
+
+.lighttask-modal-content {
+  padding: 20px 52px;
+  border-radius: 5px;
+}
+
+.darktask-modal-content {
+  padding: 20px 52px;
+  border-radius: 5px;
+}
 .modalHeader {
   padding: 8px;
   border-top-left-radius: 5px;
@@ -963,8 +1048,8 @@ inwaitColor {
   border: none;
   margin: 5px 0;
   border-radius: 5px;
-  background: #EBEBEB;
-  color: #7D7D7D;
+  background: #ebebeb;
+  color: #7d7d7d;
 
   font-family: Gilroy-Bold;
 }
@@ -977,7 +1062,7 @@ inwaitColor {
   margin: 5px 0;
   border-radius: 5px;
   background: #262626;
-  color: #979A9C;
+  color: #979a9c;
 
   font-family: Gilroy-Bold;
 }
@@ -1030,7 +1115,102 @@ inwaitColor {
 }
 .profileDate {
   margin-top: 22px;
+  color: rgba(255, 255, 255, 0.5);
+  font-size: small;
 }
+
+.lightprofileDate {
+  margin-top: 22px;
+  color: #7D7D7D;
+  font-size: small;
+}
+
+.darkprofileDate {
+  margin-top: 22px;
+  color: rgba(255, 255, 255, 0.5);
+  font-size: small;
+}
+
+.lightm-profile-card {
+   color: #037F97;
+}
+
+.profileActivePart .lightm-profile-card {
+  color: #0F1F46;
+}
+
+.m-profile-card {
+  color: #55CAE1;
+}
+
+.profileActivePart .m-profile-card {
+ color: #FFFFFF;
+}
+
+.darkm-profile-card {
+  color: #55CAE1;
+}
+
+.profileActivePart .darkm-profile-card {
+ color: #FFFFFF;
+}
+
+.m-profile {
+  color: #53B2F4;
+}
+
+.profileActivePart .m-profile {
+  color: white;
+}
+
+.profileActivePart .lightm-profile {
+  color: #0F1F46;
+}
+
+.profileActivePart .darkm-profile {
+  color: white;
+}
+
+.lightm-profile {
+  color: #53B2F4;
+}
+
+.darkm-profile {
+  color: #53B2F4;
+}
+
+.lightm-profile-max {
+  color: #0F1F46;
+}
+
+.m-profile-max {
+  color: #FFFFFF;
+}
+
+.darkm-profile-max {
+  color: #FFFFFF;
+}
+
+.profileActivePart .lightm-profile-max {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.profileActivePart .m-profile-max {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.profileActivePart .darkm-profile-max {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.text-red {
+  color: #FF7878
+}
+
+.text-yellow {
+  color: #FFB342;
+}
+
 .profileBorder {
   border: 1px solid white;
   margin: 12px 0;
@@ -1045,6 +1225,12 @@ inwaitColor {
   width: 26%;
   padding: 12px 18px;
   margin: 6px 0;
+}
+
+.profileActivePart .lightprofileDate {
+  color: rgba(255, 255, 255, 0.5);
+  font-size: small;
+  margin-top: 22px;
 }
 .profileInBorder {
   border: 1px solid #121a42;
@@ -1090,6 +1276,60 @@ textarea {
   padding: 9px 20px;
   margin-bottom: 15px;
 }
+
+.lightbtnProxy {
+  background: #53b2f4;
+  color: #F0F2F9;
+  padding: 9px 20px;
+  margin-bottom: 15px;
+}
+
+.custom-delay {
+  color: #00B574;
+}
+
+.activetask .lighttext-gray {
+  color: white;
+}
+
+.activetask .darktext-gray {
+  color: white;
+}
+
+.activetask .text-gray {
+  color: white;
+}
+.darkbtnProxy {
+  background: #53b2f4;
+  color: #0a0822;
+  padding: 9px 20px;
+  margin-bottom: 15px;
+}
+
+.bg-activeBg .custom-blue {
+  color: #0F1F46;
+}
+
+.bg-activeBg .darkcustom-blue {
+  color: white;
+}
+
+.bg-activeBg .lightcustom-blue {
+  color: #0F1F46;
+}
+
+.bg-activeBg .custom-blue {
+  color: white;
+}
+
+.darkcustom-blue {
+  color: #53B2F4;
+}
+
+.lightcustom-blue {
+  color: #53B2F4;
+}
+
 .btnTest {
   padding: 9px 30px;
   background: #00b574;
@@ -1097,10 +1337,24 @@ textarea {
   color: #0a0822;
 }
 
+.lightbtnTest {
+  padding: 9px 30px;
+  background: #00b574;
+  margin-bottom: 15px;
+  color: #F0F2F9;
+}
+
+.darkbtnTest {
+  padding: 9px 30px;
+  background: #00b574;
+  margin-bottom: 15px;
+  color: #0a0822;
+}
 .testOn {
   padding: 12px 16px;
   margin: 12px 38px;
   border-radius: 5px;
+  color: #7D7D7D;
 }
 .custom {
   margin: 0px 38px 12px 38px;
@@ -1139,6 +1393,20 @@ textarea {
 }
 
 .btnAccount {
+  background: #53b2f4;
+  color: #0a0822;
+  padding: 9px 20px;
+  margin-bottom: 15px;
+}
+
+.lightbtnAccount {
+  background: #53b2f4;
+  color: white;
+  padding: 9px 20px;
+  margin-bottom: 15px;
+}
+
+.darkbtnAccount {
   background: #53b2f4;
   color: #0a0822;
   padding: 9px 20px;
@@ -1199,11 +1467,6 @@ lightbody {
   background: #f0f2f9;
   border: 1px solid #dcdcdc;
   border-radius: 5px;
-}
-
-.lightheader {
-  background: #f0f2f9;
-  border: 1px solid #dcdcdc;
 }
 
 .lightkeyTitle {
@@ -1345,7 +1608,7 @@ lightbody {
   border-radius: 5px;
   padding: 23px 27px 0px 27px;
   margin: 24px 0 7px 14px;
-  color: #7D7D7D;
+  color: #7d7d7d;
 }
 
 .lighttotalDeclines {
@@ -1372,10 +1635,82 @@ lightbody {
 }
 .lightbg-task {
   background: #ebebeb;
+  color: #037F97;
+}
+
+.lightbg-custom-task {
+  background: #ebebeb;
   color: #0F1F46;
 }
+
+.lightcustom-w-bottom {
+  color: #0F1F46;
+}
+
+.bg-activeBg .lightcustom-w-bottom {
+  color: rgba(255, 255, 255, 0.5);;
+}
+
+.bg-activeBg .custom-w-bottom {
+  color: rgba(255, 255, 255, 0.5); ;
+}
+
+.bg-activeBg .darkcustom-w-bottom {
+  color: rgba(255, 255, 255, 0.5);;
+}
+
+.custom-w-bottom {
+  color: white;
+}
+
+.darkcustom-w-bottom {
+  color: white;
+}
+
+.lightcustom-w-header {
+  color: #53B2F4;
+}
+
+
+.bg-activeBg .lightcustom-w-header {
+  color: #0F1F46;
+}
+
+.custom-w-header {
+  color: #53B2F4;
+}
+
+.bg-activeBg .custom-w-header {
+  color: white;
+}
+
+.darkcustom-w-header {
+  color: #53B2F4;
+}
+
+.bg-activeBg .darkcustom-w-header {
+  color: white;
+}
+
+.bg-custom-task {
+  background: #0F0D32;
+  color: white;
+}
+
+.darkbg-custom-task {
+  background:  #161616;
+  color: white;
+}
+
 .lightborder-task {
   border: 1px solid #dcdcdc;
+}
+
+.custom-group {
+  color: #7D7D7D;
+}
+.custom-blue {
+  color: #53B2F4;
 }
 
 .lighttask__border {
@@ -1426,8 +1761,8 @@ lightbody {
   border: none;
   margin: 5px 0;
   border-radius: 5px;
-  background: #EBEBEB;
-  color: #7D7D7D;
+  background: #ebebeb;
+  color: #7d7d7d;
 }
 
 .lightprofilePart {
@@ -1435,7 +1770,7 @@ lightbody {
   border-radius: 5px;
   width: 26%;
   padding: 12px 17px;
-  color: #0F1F46;
+  color: #0f1f46;
 }
 .lightProfile__Content {
   background: #f0f2f9;
@@ -1697,7 +2032,7 @@ darkbody {
   width: 35%;
   position: absolute;
   left: 30%;
-  background: white;
+  background: #1D1D1D;
   top: 22%;
 }
 
@@ -1708,7 +2043,7 @@ darkbody {
   border: none;
   margin: 5px 0;
   border-radius: 5px;
-  background: #1d1d1d;
+  background: #262626;
   color: white;
 }
 
@@ -1747,11 +2082,11 @@ darkbody {
 }
 
 .activetask {
-  background: linear-gradient(93.18deg, #3695A8 0%, #5BD4EC 100%);
+  background: linear-gradient(93.18deg, #3695a8 0%, #5bd4ec 100%);
 }
 
 .activeline {
-  border: 1px solid #FFFFFF;
+  border: 1px solid #ffffff;
 }
 
 .darktext-gray {
@@ -1759,7 +2094,7 @@ darkbody {
 }
 
 .lighttext-gray {
-  color: #7D7D7D;
+  color: #7d7d7d;
 }
 
 .active.lightsubmenu {
@@ -1772,4 +2107,104 @@ darkbody {
   color: #53b2f4 !important;
   background: #53b2f436 !important;
   border-left: 3px solid #53b2f4;
+}
+
+.lightactive-profile-header {
+  color: #0F1F46
+}
+
+.lightprofile-header{
+  color: #53B2F4;
+}
+
+.lightprofile-footer {
+  color: #0F1F46
+}
+
+.lightactive-profile-footer {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.active-profile-header {
+  color: #FFFFFF
+}
+
+.profile-header{
+  color: #53B2F4;
+}
+
+.profile-footer {
+  color: #FFFFFF;
+}
+
+.active-profile-footer {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.darkactive-profile-header {
+  color: #FFFFFF
+}
+
+.darkprofile-header{
+  color: #53B2F4;
+}
+
+.darkprofile-footer {
+  color: #FFFFFF;
+}
+
+.darkactive-profile-footer {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.active-task-header {
+  color: #FFFFFF;
+}
+
+.task-header {
+  color: #53B2F4;
+}
+
+.lightactive-task-header {
+  color: #0F1F46;
+}
+
+.lighttask-header {
+  color: #53B2F4;
+}
+
+.darkactive-task-header {
+  color: #FFFFFF;
+}
+
+.darktask-header {
+  color: #53B2F4;
+}
+
+.active-task-footer {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.task-footer {
+  color: white;
+}
+
+.lightactive-task-footer {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.lighttask-footer {
+  color: #0F1F46;
+}
+
+.darkactive-task-footer {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.darktask-footer {
+  color: white;
+}
+
+.custom-dashboard {
+  color: #76FF94;
 }

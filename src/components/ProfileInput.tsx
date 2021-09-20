@@ -30,8 +30,8 @@ const ProfileInput = ({ profile, active = false, idx, setActive }: any) => {
         <div
           className={
             active
-              ? 'font-11 font-Gilroy-Bold text-blue'
-              : 'font-11 font-Gilroy-Bold ' + theme + 'text-white'
+              ? 'font-11 font-Gilroy-Bold '+theme+'active-profile-header'
+              : 'font-11 font-Gilroy-Bold ' + theme + 'profile-header'
           }
         >
           {profile.name}
@@ -45,8 +45,8 @@ const ProfileInput = ({ profile, active = false, idx, setActive }: any) => {
           <span
             className={
               active
-                ? 'font-Gilroy-Bold font-11  activeProfileColor'
-                : 'font-11 font-Gilroy-Bold ' + theme + 'text-white'
+                ? 'font-Gilroy-Bold font-11  '+theme+'active-profile-footer'
+                : 'font-11 font-Gilroy-Bold ' + theme + 'profile-footer'
             }
           >
             {profile.taskArr.length} Profiles{' '}

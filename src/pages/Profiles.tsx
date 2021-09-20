@@ -229,7 +229,7 @@ export const Profiles = () => {
               'text-gray flex items-center'
             }
           >
-            <div className="mr-1">Search Task</div>
+            <div className="mr-1">Search Profile</div>
             <img src={searchimg} alt="search" />
           </div>
         </div>
@@ -253,19 +253,19 @@ export const Profiles = () => {
                   }
                 >
                   <div className="block">
-                    <div className="font-Gilroy-Bold font-11 ">
+                    <div className={"font-Gilroy-Bold font-11 "+theme+"m-profile"}>
                       {item.profile}
                     </div>
-                    <div className="font-Gilroy-Bold font-10">{item.max}</div>
+                    <div className={"font-Gilroy-Bold font-10 "+theme+"m-profile-max"}>{item.max}</div>
                   </div>
                   <img src={profile} alt="profile" />
                 </div>
-                <div className="flex items-center justify-between profileDate">
+                <div className={"flex items-center justify-between "+theme+"profileDate"}>
                   {item.data}
                 </div>
                 <div className="profileBorder"></div>
                 <div className="flex items-center justify-between">
-                  <div className="font-Gilroy-Bold font-10">{item.card}</div>
+                  <div className={"font-Gilroy-Bold font-10 "+theme+"m-profile-card"}>{item.card}</div>
                   {/* {active ? (
 
                   ) : (

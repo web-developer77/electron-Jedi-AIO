@@ -27,8 +27,8 @@ const TaskGroupInput = ({ taskgroup, setActive, active = false, idx }: any) => {
         <div
           className={
             active
-              ? 'font-11 font-Gilroy-Bold text-blue'
-              : 'font-11 font-Gilroy-Bold ' + theme + 'text-white'
+              ? 'font-11 font-Gilroy-Bold '+theme+'active-task-header'
+              : 'font-11 font-Gilroy-Bold ' + theme + 'task-header'
           }
         >
           {taskgroup.name}
@@ -36,8 +36,8 @@ const TaskGroupInput = ({ taskgroup, setActive, active = false, idx }: any) => {
         <div
           className={
             active
-              ? 'font-Gilroy-Bold font-11 activeProfileColor'
-              : 'font-11 font-Gilroy-Bold ' + theme + 'text-white'
+              ? 'font-Gilroy-Bold font-11 '+theme+'active-task-footer'
+              : 'font-11 font-Gilroy-Bold ' + theme + 'task-footer'
           }
         >
           {taskgroup.taskArr.length} Tasks

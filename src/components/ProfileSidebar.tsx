@@ -25,7 +25,7 @@ const ProfileSidebar = ({
         Profile Groups
       </div>
       <div className={"flex items-center "+theme+"creatGroup "+theme+"task__border justify-between"}>
-        <div className="font-10 font-Gilroy-Bold text-green">Group Name</div>
+        <div className="font-10 font-Gilroy-Bold custom-group">Group Name</div>
         <div
           className="flex items-center cursor-pointer"
           onClick={() => {

@@ -188,7 +188,7 @@ const Accounts = () => {
               'text-gray flex items-center'
             }
           >
-            <div className="mr-1">Search Task</div>
+            <div className="mr-1">Search Accounts</div>
             <img src={searchimg} alt="search" />
           </div>
         </div>
@@ -225,7 +225,7 @@ const Accounts = () => {
           className={
             'flex items-center ' +
             theme +
-            'bg-task ' +
+            'bg-custom-task ' +
             theme +
             'border-task taskGroupsTitle font-13 font-Gilroy-Bold ' +
             theme +
@@ -253,7 +253,7 @@ const Accounts = () => {
           />
         </div>
         <div className="flex justify-center">
-          <button className="btn  bg-blue btnAccount text-center border-radius-3">
+          <button className={"btn  bg-blue "+theme+"btnAccount text-center border-radius-3"}>
             Add Accounts
           </button>
         </div>

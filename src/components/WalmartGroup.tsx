@@ -31,7 +31,7 @@ const WalmartGroup = ({
     >
       <div className="w-100">
         <div
-          className={'block ' + theme + 'text-white font-Gilroy-Bold font-11 '+theme+'custom-color'}
+          className={'block ' + theme + ' text-white font-Gilroy-Bold font-11 '+theme+'custom-w-header'}
         >
           {walmartGroup.name}
         </div>
@@ -40,7 +40,7 @@ const WalmartGroup = ({
         ></div>
 
         <div className="flex items-center justify-between">
-          <div className={"font-Gilroy-Bold font-11 "+theme+"custom-color"}>
+          <div className={"font-Gilroy-Bold font-11 "+theme+"custom-w-bottom"}>
             {walmartGroup.taskArr.length} Accounts
           </div>
           <img src={deleteImg} alt="" />

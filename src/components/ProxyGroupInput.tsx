@@ -27,8 +27,8 @@ const ProxyGroupInput = ({ proxygroup, idx, active, setActive }: any) => {
         <div
           className={
             active
-              ? 'font-11 font-Gilroy-Bold text-blue'
-              : 'font-11 font-Gilroy-Bold ' + theme + 'text-white'
+              ? 'font-11 font-Gilroy-Bold '+theme+'custom-blue'
+              : 'font-11 font-Gilroy-Bold ' + theme + 'custom-blue'
           }
         >
           {proxygroup.name}

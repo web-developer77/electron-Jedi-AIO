@@ -299,6 +299,14 @@ ipcMain.on('mainPage', async ()=>{
   }
 });
 
+ipcMain.on('logout',async ()=>{
+  await createLoginWindow();
+  if(mainWindow){
+    mainWindow.close();
+    mainWindow=null;
+  }
+});
+
 ipcMain.on('captcha', async () => {
   if (captchaWindow === null) await createCaptchaWindow();
 });

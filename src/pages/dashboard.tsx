@@ -137,7 +137,7 @@ export function Dashboard() {
             >
               Total Spent
             </div>
-            <div className="flex justify-center text-center text-green font-13 font-Gilroy-Bold mt-3 ">
+            <div className="flex justify-center text-center text-green font-13 font-Gilroy-Bold mt-3 custom-dashboard">
               +180$ Today
             </div>
 
